@@ -7,7 +7,7 @@ function countUniqueValues(arr) {
   if (arr.length === 0) return console.log(0);
   var obj = {};
   for (var number of arr) {
-    obj[number] = (obj[number] || 0) + 1;
+    obj[number] = obj[number] || 0;
   }
   console.log(obj);
   console.log(Object.keys(obj).length);
